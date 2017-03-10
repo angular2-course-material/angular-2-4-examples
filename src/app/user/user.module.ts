@@ -7,6 +7,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   imports: [
+    CommonModule,
     SharedModule,
     RouterModule.forChild([
       { path: '', component: ProfileComponent }

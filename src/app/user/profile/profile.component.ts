@@ -8,6 +8,8 @@ import { AuthService } from '../../shared/auth.service';
 })
 export class ProfileComponent implements OnInit {
 
+  shouldHideDiv = false;
+
   constructor(private auth: AuthService) { 
     this.auth.auth(1);
   }
@@ -15,4 +17,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
   }
 
+  hideDiv() {
+    this.shouldHideDiv = !this.shouldHideDiv;
+  }
 }

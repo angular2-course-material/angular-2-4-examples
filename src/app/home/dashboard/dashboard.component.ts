@@ -8,6 +8,8 @@ import { AuthService } from '../../shared/auth.service';
 })
 export class DashboardComponent implements OnInit {
 
+  shouldHideDiv = false;
+
   constructor(private auth: AuthService) { 
     this.auth.auth(2);
   }
@@ -15,4 +17,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
   }
 
+  hideDiv() {
+    this.shouldHideDiv = !this.shouldHideDiv;
+  }
 }
