@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
 
+# What this example cover
+- Lazy Loading
+- Usage forRoot and forChild
+- Export modules to be used for third party modules
+- Child routes
+- Transclusion
+- Observables
+- Search
+- Async pipe
+- Sockets
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
