@@ -2,6 +2,9 @@
   {{title}}
 </h1>
 
+<h6 style="margin-bottom: 0">VALUES:</h6>
+<div *ngFor="let value of values">- {{ value }}</div>
+
 <a routerLink="home"  routerLinkActive="active">Home</a>
 <a routerLink="user" routerLinkActive="active">User</a>
 
