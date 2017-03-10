@@ -12,7 +12,14 @@ import { AuthService } from './auth.service';
     AuthService
   ]
 })*/
-@NgModule({})
+@NgModule({
+  imports: [
+    CommonModule
+  ],
+  exports: [
+    CommonModule
+  ]
+})
 export class SharedModule { 
   static forRoot(): ModuleWithProviders {
     return {

@@ -7,7 +7,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   imports: [
-    CommonModule,
     SharedModule,
     RouterModule.forChild([
       { path: '', component: DashboardComponent }
