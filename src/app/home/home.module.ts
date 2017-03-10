@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { SharedModule } from '../shared/shared.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   imports: [
@@ -12,7 +13,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
       { path: '', component: DashboardComponent }
     ])
   ],
-  declarations: [DashboardComponent],
+  declarations: [DashboardComponent, CardComponent],
   exports: [RouterModule]
 })
 export class HomeModule { }
